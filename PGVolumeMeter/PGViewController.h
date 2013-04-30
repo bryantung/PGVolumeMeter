@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PGVolumeMeter.h"
 
 @interface PGViewController : UIViewController
-
+@property (nonatomic, weak) IBOutlet PGVolumeMeter *meterVerticalUp;
+@property (nonatomic, weak) IBOutlet PGVolumeMeter *meterHorizontalRight;
+@property (nonatomic, weak) IBOutlet PGVolumeMeter *meterVerticalDown;
+@property (nonatomic, weak) IBOutlet PGVolumeMeter *meterHorizontalLeft;
 @end

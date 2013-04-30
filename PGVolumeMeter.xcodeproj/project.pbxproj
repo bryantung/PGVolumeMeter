@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DEB3084E17267F8600458CF5 /* VolumeMeterMappingTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB3084C17267CAA00458CF5 /* VolumeMeterMappingTransformer.m */; };
 		DEBA17A5171E332700835BB2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBA17A4171E332600835BB2 /* UIKit.framework */; };
 		DEBA17A7171E332700835BB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBA17A6171E332700835BB2 /* Foundation.framework */; };
 		DEBA17A9171E332700835BB2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBA17A8171E332700835BB2 /* CoreGraphics.framework */; };
@@ -24,6 +25,12 @@
 		DEBA17CE171E332700835BB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBA17A6171E332700835BB2 /* Foundation.framework */; };
 		DEBA17D6171E332700835BB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEBA17D4171E332700835BB2 /* InfoPlist.strings */; };
 		DEBA17D9171E332700835BB2 /* PGVolumeMeterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEBA17D8171E332700835BB2 /* PGVolumeMeterTests.m */; };
+		DEBA17E6171E33C300835BB2 /* PGVolumeMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = DEBA17E5171E33C300835BB2 /* PGVolumeMeter.m */; };
+		DEBA17E8171E50CF00835BB2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBA17E7171E50CF00835BB2 /* QuartzCore.framework */; };
+		DEBA17EB171EE02600835BB2 /* meter-level-horizontal.png in Resources */ = {isa = PBXBuildFile; fileRef = DEBA17E9171EE02500835BB2 /* meter-level-horizontal.png */; };
+		DEBA17EC171EE02600835BB2 /* meter-level-vertical.png in Resources */ = {isa = PBXBuildFile; fileRef = DEBA17EA171EE02600835BB2 /* meter-level-vertical.png */; };
+		DEBA17EF171EEDB100835BB2 /* meter-level-horizontal-x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEBA17ED171EEDB100835BB2 /* meter-level-horizontal-x.png */; };
+		DEBA17F0171EEDB100835BB2 /* meter-level-vertical-x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEBA17EE171EEDB100835BB2 /* meter-level-vertical-x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DEB3084B17267CAA00458CF5 /* VolumeMeterMappingTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeMeterMappingTransformer.h; sourceTree = "<group>"; };
+		DEB3084C17267CAA00458CF5 /* VolumeMeterMappingTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeMeterMappingTransformer.m; sourceTree = "<group>"; };
 		DEBA17A1171E332600835BB2 /* PGVolumeMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PGVolumeMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBA17A4171E332600835BB2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DEBA17A6171E332700835BB2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,6 +69,13 @@
 		DEBA17D5171E332700835BB2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DEBA17D7171E332700835BB2 /* PGVolumeMeterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGVolumeMeterTests.h; sourceTree = "<group>"; };
 		DEBA17D8171E332700835BB2 /* PGVolumeMeterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGVolumeMeterTests.m; sourceTree = "<group>"; };
+		DEBA17E4171E33C300835BB2 /* PGVolumeMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGVolumeMeter.h; sourceTree = "<group>"; };
+		DEBA17E5171E33C300835BB2 /* PGVolumeMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGVolumeMeter.m; sourceTree = "<group>"; };
+		DEBA17E7171E50CF00835BB2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DEBA17E9171EE02500835BB2 /* meter-level-horizontal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meter-level-horizontal.png"; sourceTree = "<group>"; };
+		DEBA17EA171EE02600835BB2 /* meter-level-vertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meter-level-vertical.png"; sourceTree = "<group>"; };
+		DEBA17ED171EEDB100835BB2 /* meter-level-horizontal-x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meter-level-horizontal-x.png"; sourceTree = "<group>"; };
+		DEBA17EE171EEDB100835BB2 /* meter-level-vertical-x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meter-level-vertical-x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +86,7 @@
 				DEBA17A5171E332700835BB2 /* UIKit.framework in Frameworks */,
 				DEBA17A7171E332700835BB2 /* Foundation.framework in Frameworks */,
 				DEBA17A9171E332700835BB2 /* CoreGraphics.framework in Frameworks */,
+				DEBA17E8171E50CF00835BB2 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +125,7 @@
 		DEBA17A3171E332600835BB2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DEBA17E7171E50CF00835BB2 /* QuartzCore.framework */,
 				DEBA17A4171E332600835BB2 /* UIKit.framework */,
 				DEBA17A6171E332700835BB2 /* Foundation.framework */,
 				DEBA17A8171E332700835BB2 /* CoreGraphics.framework */,
@@ -125,6 +143,14 @@
 				DEBA17BF171E332700835BB2 /* MainStoryboard_iPad.storyboard */,
 				DEBA17C2171E332700835BB2 /* PGViewController.h */,
 				DEBA17C3171E332700835BB2 /* PGViewController.m */,
+				DEBA17E4171E33C300835BB2 /* PGVolumeMeter.h */,
+				DEBA17E5171E33C300835BB2 /* PGVolumeMeter.m */,
+				DEB3084B17267CAA00458CF5 /* VolumeMeterMappingTransformer.h */,
+				DEB3084C17267CAA00458CF5 /* VolumeMeterMappingTransformer.m */,
+				DEBA17E9171EE02500835BB2 /* meter-level-horizontal.png */,
+				DEBA17EA171EE02600835BB2 /* meter-level-vertical.png */,
+				DEBA17ED171EEDB100835BB2 /* meter-level-horizontal-x.png */,
+				DEBA17EE171EEDB100835BB2 /* meter-level-vertical-x.png */,
 				DEBA17AB171E332700835BB2 /* Supporting Files */,
 			);
 			path = PGVolumeMeter;
@@ -241,6 +267,10 @@
 				DEBA17BB171E332700835BB2 /* Default-568h@2x.png in Resources */,
 				DEBA17BE171E332700835BB2 /* MainStoryboard_iPhone.storyboard in Resources */,
 				DEBA17C1171E332700835BB2 /* MainStoryboard_iPad.storyboard in Resources */,
+				DEBA17EB171EE02600835BB2 /* meter-level-horizontal.png in Resources */,
+				DEBA17EC171EE02600835BB2 /* meter-level-vertical.png in Resources */,
+				DEBA17EF171EEDB100835BB2 /* meter-level-horizontal-x.png in Resources */,
+				DEBA17F0171EEDB100835BB2 /* meter-level-vertical-x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +308,8 @@
 				DEBA17B1171E332700835BB2 /* main.m in Sources */,
 				DEBA17B5171E332700835BB2 /* PGAppDelegate.m in Sources */,
 				DEBA17C4171E332700835BB2 /* PGViewController.m in Sources */,
+				DEBA17E6171E33C300835BB2 /* PGVolumeMeter.m in Sources */,
+				DEB3084E17267F8600458CF5 /* VolumeMeterMappingTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +500,7 @@
 				DEBA17DE171E332700835BB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DEBA17DF171E332700835BB2 /* Build configuration list for PBXNativeTarget "PGVolumeMeterTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +509,7 @@
 				DEBA17E1171E332700835BB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

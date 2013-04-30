@@ -1,23 +1,84 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G56" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="PGViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="vbs-Uy-pQd" userLabel="Up-fit" customClass="PGVolumeMeter">
+                                <rect key="frame" x="124" y="100" width="8" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="overflowIndication" destination="x4o-mW-Cqp" id="gch-Yw-eOe"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="x4o-mW-Cqp" userLabel="Up overflow">
+                                <rect key="frame" x="124" y="85" width="8" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91738820080000005" green="0.14159379899999999" blue="0.1154679731" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="qvw-VK-Rdz" userLabel="Right-stretch" customClass="PGVolumeMeter">
+                                <rect key="frame" x="12" y="318" width="280" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="overflowIndication" destination="Hp7-ph-fZg" id="3L5-V4-3eF"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="Hp7-ph-fZg" userLabel="Right overflow">
+                                <rect key="frame" x="297" y="318" width="20" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91738820080000005" green="0.14159379899999999" blue="0.1154679731" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="aoA-wy-xZw" userLabel="Down-stretch" customClass="PGVolumeMeter">
+                                <rect key="frame" x="176" y="116" width="20" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="Tgu-Vr-9BV" userLabel="Left-shrink" customClass="PGVolumeMeter">
+                                <rect key="frame" x="96" y="355" width="100" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="meterHorizontalLeft" destination="Tgu-Vr-9BV" id="OC4-a2-hGw"/>
+                        <outlet property="meterHorizontalRight" destination="qvw-VK-Rdz" id="irw-zh-tYy"/>
+                        <outlet property="meterVerticalDown" destination="aoA-wy-xZw" id="hU3-Ys-yba"/>
+                        <outlet property="meterVerticalUp" destination="vbs-Uy-pQd" id="9aY-EC-uTb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="PGViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PGViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="meterHorizontalLeft" candidateClass="PGVolumeMeter"/>
+                <relationship kind="outlet" name="meterHorizontalRight" candidateClass="PGVolumeMeter"/>
+                <relationship kind="outlet" name="meterVerticalDown" candidateClass="PGVolumeMeter"/>
+                <relationship kind="outlet" name="meterVerticalUp" candidateClass="PGVolumeMeter"/>
+            </relationships>
+        </class>
+        <class className="PGVolumeMeter" superclassName="UIControl">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PGVolumeMeter.h"/>
+            <relationships>
+                <relationship kind="outlet" name="overflowIndication" candidateClass="UIView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
