@@ -75,6 +75,10 @@
     if (dbValue<self.minimum) {
         return 0.0f;
     }
+    if (dbValue != dbValue) { // BT: isNaN
+        return 0.0f;
+    }
+    
     __block float minScale = 0.0f;
     __block float maxScale = 1.0f;
     __block float minDb = _minimum;
